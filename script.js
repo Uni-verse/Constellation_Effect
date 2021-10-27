@@ -18,7 +18,7 @@ const mouse = {
 }
 
 canvas.addEventListener('click', function(e){
-    for(let i = 0; i < 300; i++){
+    for(let i = 0; i < 100; i++){
         particlesArray.push(new Particle());
     }
 })
@@ -35,8 +35,6 @@ class Particle {
     constructor(){
         this.x = mouse.x;
         this.y = mouse.y;
-        // this.x = Math.random() * canvas.width;
-        // this.y = Math.random() * canvas.height;
         this.size = Math.random() * 15 + 1;
         this.speedX = Math.random() * 5 - 2.5;
         this.speedY = Math.random() * 5 - 2.5;
